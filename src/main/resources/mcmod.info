@@ -1,0 +1,21 @@
+[
+{
+  "modid": "devtips",
+  "name": "DevTooltips",
+  "description": "A simple tool for mod(pack) developers that displays various info about items using tooltips.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "goldenapple"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
