@@ -1,4 +1,4 @@
-package main.java.goldenapple.devtips;
+package goldenapple.devtips;
 
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -14,7 +14,7 @@ import net.minecraftforge.oredict.OreDictionary;
 public class TooltipHandler {
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public void onTooltip(ItemTooltipEvent event){
-        if((ConfigHandler.requiresShiftF3 && event.showAdvancedItemTooltips) || !ConfigHandler.requiresShiftF3){
+        if((ConfigHandler.requiresF3plusH && event.showAdvancedItemTooltips) || !ConfigHandler.requiresF3plusH){
             if((ConfigHandler.requiresCtrl && MiscUtil.isCtrlPressed()) || !ConfigHandler.requiresCtrl){
                 event.toolTip.add(EnumChatFormatting.GOLD.toString() + "Unlocalized name: " + EnumChatFormatting.GRAY.toString() + event.itemStack.getItem().getUnlocalizedName());
 

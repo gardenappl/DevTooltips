@@ -1,15 +1,16 @@
-package main.java.goldenapple.devtips;
+package goldenapple.devtips;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.MinecraftForge;
 
-@Mod(modid = DevTooltips.MOD_ID, name = DevTooltips.MOD_NAME, version = DevTooltips.VERSION)
+@Mod(modid = DevTooltips.MOD_ID, name = DevTooltips.MOD_NAME, version = DevTooltips.VERSION, guiFactory = DevTooltips.GUI_FACTORY)
 public class DevTooltips {
     public static final String MOD_ID = "devtips";
     public static final String MOD_NAME = "DevTooltips";
     public static final String VERSION = "1.0";
+    public static final String GUI_FACTORY = "goldenapple.devtips.DevTooltipsGuiFactory";
 
     @Mod.Instance(MOD_ID)
     public static DevTooltips instance;

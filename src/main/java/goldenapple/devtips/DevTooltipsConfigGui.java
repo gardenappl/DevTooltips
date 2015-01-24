@@ -1,4 +1,4 @@
-package main.java.goldenapple.devtips;
+package goldenapple.devtips;
 
 import cpw.mods.fml.client.config.GuiConfig;
 import net.minecraft.client.gui.GuiScreen;

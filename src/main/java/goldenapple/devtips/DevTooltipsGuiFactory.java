@@ -1,4 +1,4 @@
-package main.java.goldenapple.devtips;
+package goldenapple.devtips;
 
 import cpw.mods.fml.client.IModGuiFactory;
 import net.minecraft.client.Minecraft;

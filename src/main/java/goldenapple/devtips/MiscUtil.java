@@ -1,4 +1,4 @@
-package main.java.goldenapple.devtips;
+package goldenapple.devtips;
 
 import org.lwjgl.input.Keyboard;
 

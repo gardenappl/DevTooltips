@@ -1,4 +1,4 @@
-package main.java.goldenapple.devtips;
+package goldenapple.devtips;
 
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -10,7 +10,7 @@ public class ConfigHandler {
     public static Configuration config;
 
     public static boolean requiresCtrl;
-    public static boolean requiresShiftF3;
+    public static boolean requiresF3plusH;
     public static boolean showGameRegistryNames;
     public static boolean showFluidRegistryNames;
     public static boolean showClassNames;
@@ -25,7 +25,7 @@ public class ConfigHandler {
 
     private static void getValues(){
         requiresCtrl = config.getBoolean("requiresCtrl", Configuration.CATEGORY_GENERAL, true, "If set to false, tooltips will be shown without pressing Ctrl.");
-        requiresShiftF3 = config.getBoolean("requiresShift+F3", Configuration.CATEGORY_GENERAL, true, "If set to false, tooltips will be shown without Shift + F3.");
+        requiresF3plusH = config.getBoolean("requiresF3+H", Configuration.CATEGORY_GENERAL, true, "If set to false, tooltips will be shown without going into Advanced Info mode (F3 + H).");
         showGameRegistryNames = config.getBoolean("showGameRegistryNames", Configuration.CATEGORY_GENERAL, true, "If set to true, GameRegistry names of items and blocks will be shown in the tooltip.");
         showFluidRegistryNames = config.getBoolean("showFluidRegistryNames", Configuration.CATEGORY_GENERAL, true, "If set to true, FluidRegistry names of fluids and fluid containers will be shown in the tooltip.");
         showClassNames = config.getBoolean("showClassNames", Configuration.CATEGORY_GENERAL, true, "If set to true, item and block class names of items and blocks will be shown in the tooltip. Only useful for programmers.");
